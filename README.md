@@ -1,2 +1,4 @@
 # Algorithms
-Programs to apply lessons from Algorithms by Sedgewick
+
+A place to learn about algorithms and to do 
+review problems.
