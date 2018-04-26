@@ -54,8 +54,9 @@ class PercolationSimulation:
 
 
 if __name__ == "__main__":
-    scale = 100
+    scale = 10
     probabilities = range(int(0.5 * scale), int(0.7 * scale), 1)
+    N = 1000
 
     for p in probabilities:
         p =  p / scale
@@ -63,7 +64,7 @@ if __name__ == "__main__":
         n_samples_percolate = 0
 
         for i in range(n_samples):
-            ps = PercolationSimulation(p = p)
+            ps = PercolationSimulation(N = N, p = p)
             n_samples_percolate += ps.run()
 
         r = n_samples_percolate / n_samples
